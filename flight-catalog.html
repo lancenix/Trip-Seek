@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flight - Home | Trip Seek</title>
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+
+    <body>
+        <!-- HEADER -->
+        <div class="header">
+            <!-- LOGO WEBSITE -->
+            <a href="home.html"><img src="logotext.png" class="logo"></a>
+            <!-- LOGIN + REGISTER -->
+            <ul class="headerButtonGroup">
+                <li><a href="./register.html"><button class="headerButton" id="register">Register</button></a></li>
+                <li><a href="./login.html"><button class="headerButton" id="login">Login</button></a></li>
+            </ul>
+        </div>
+        <!-- NAVIGATION -->
+        <div>
+            <ul class="nav">
+                <li><a href="./index.html"><button class="navButtons">Home</button></a></li>
+                <!-- DROPDOWN BUTTON -->
+                <div class="dropdown">
+                    <li><a href="./product.html"><button class="navButtons" id="dropButton">Catalog</button></a></li>
+                    <div class="dropdown-content">
+                        <a href="./flight-catalog.html">Flight Booking</a><br>
+                        <a href="./hotel-catalog.html">Hotel Reservation</a>
+                    </div>
+                </div>
+                <li><a href="./contact.html"><button class="navButtons">Contact</button></a></li>
+                <li><a href="./testimony.html"><button class="navButtons">Testimonies</button></a></li>
+            </ul>
+        </div>
+
+        <!-- CONTENT -->
+        <div class="content-background">
+            <img src="./images/flight-bg.jpg" alt="Flight" class="content-bg">
+            <h1 class="list-title">Flight Booking</h1>
+            <div class="list-wrapper">
+                <!-- <div class="lists-header">
+                    <h1 class="head-content">Airline</h1>
+                    <h1 class="head-content">Departure</h1>
+                    <h1 class="head-content">Destination</h1>
+                    <h1 class="head-content">Price</h1>
+                </div> -->
+
+                <!-- Flight Detail Content -->
+                <div class="lists">
+                    <h2 class="flight-company">Lion Air</h2>
+                    <div class="flight-detail">
+                        <div class="list-detail-left">
+                            <img src="images/flight logos/lion.png" class="flight-logo">
+                            <div class="flight-detail-inside">
+                                <!-- maybe use grid, i don't think you need class-->
+                                <h2>19:00</h2>
+                                <h2>23:00</h2>
+                                <h3>CGK</h3>
+                                <h3>DPS</h3>
+                            </div>
+                        </div>
+                        <div class="flight-detail-right">
+                                <a href="/login.html" class="book-button"><button>Book Flight</button></a>
+                                <h2 class="flight-price">IDR 738.000/pax</h2>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="lists">
+                    <h2 class="flight-company">Lion Air</h2>
+                    <div class="flight-detail">
+                        <div class="list-detail-left">
+                            <img src="images/flight logos/lion.png" class="flight-logo">
+                            <div class="flight-detail-inside">
+                                <!-- maybe use grid, i don't think you need class-->
+                                <h2>15:40</h2>
+                                <h2>18:30</h2>
+                                <h3>CGK</h3>
+                                <h3>DPS</h3>
+                            </div>
+                        </div>
+                        <div class="flight-detail-right">
+                            <a href="/login.html" class="book-button"><button>Book Flight</button></a>
+                            <h2 class="flight-price">IDR 842.000/pax</h2>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="lists">
+                        <h2 class="flight-company">Lion Air</h2>
+                        <div class="flight-detail">
+                            <div class="list-detail-left">
+                                <img src="images/flight logos/lion.png" class="flight-logo">
+                                <div class="flight-detail-inside">
+                                    <!-- maybe use grid, i don't think you need class-->
+                                    <h2>13:30</h2>
+                                    <h2>16:20</h2>
+                                    <h3>CGK</h3>
+                                    <h3>DPS</h3>
+                                </div>
+                            </div>
+                            <div class="flight-detail-right">
+                                <a href="/login.html" class="book-button"><button>Book Flight</button></a>
+                                <h2 class="flight-price">IDR 850.000/pax</h2>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="lists">
+                            <h2 class="flight-company">Lion Air</h2>
+                            <div class="flight-detail">
+                                <div class="list-detail-left">
+                                    <img src="images/flight logos/lion.png" class="flight-logo">
+                                    <div class="flight-detail-inside">
+                                        <!-- maybe use grid, i don't think you need class-->
+                                        <h2>11:25</h2>
+                                        <h2>14:20</h2>
+                                        <h3>CGK</h3>
+                                        <h3>DPS</h3>
+                                    </div>
+                                </div>
+                                <div class="flight-detail-right">
+                                    <a href="/login.html" class="book-button"><button>Book Flight</button></a>
+                                    <h2 class="flight-price">IDR 919.000/pax</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lists">
+                                <h2 class="flight-company">Garuda Indonesia</h2>
+                                <div class="flight-detail">
+                                    <div class="list-detail-left">
+                                        <img src="images/flight logos/garuda.png" class="flight-logo">
+                                        <div class="flight-detail-inside">
+                                            <!-- maybe use grid, i don't think you need class-->
+                                            <h2>14:50</h2>
+                                            <h2>18:00</h2>
+                                            <h3>CGK</h3>
+                                            <h3>DPS</h3>
+                                        </div>
+                                    </div>
+                                    <div class="flight-detail-right">
+                                        <a href="/login.html" class="book-button"><button>Book Flight</button></a>
+                                        <h2 class="flight-price">IDR 1.099.000/pax</h2>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="lists">
+                                <h2 class="flight-company">Garuda Indonesia</h2>
+                                <div class="flight-detail">
+                                    <div class="list-detail-left">
+                                        <img src="images/flight logos/garuda.png" class="flight-logo">
+                                        <div class="flight-detail-inside">
+                                            <!-- maybe use grid, i don't think you need class-->
+                                            <h2>21:35</h2>
+                                            <h2>00:40</h2>
+                                            <h3>CGK</h3>
+                                            <h3>DPS</h3>
+                                        </div>
+                                    </div>
+                                    <div class="flight-detail-right">
+                                        <a href="/login.html" class="book-button"><button>Book Flight</button></a>
+                                        <h2 class="flight-price">IDR 1.103.000/pax</h2>
+                                    </div>
+                                        
+                                </div>
+                            </div>
+                            <div class="lists">
+                                    <h2 class="flight-company">Batik Air</h2>
+                                    <div class="flight-detail">
+                                        <div class="list-detail-left">
+                                            <img src="images/flight logos/batik.png" class="flight-logo">
+                                            <div class="flight-detail-inside">
+                                                <!-- maybe use grid, i don't think you need class-->
+                                                <h2>16:50</h2>
+                                                <h2>19:40</h2>
+                                                <h3>CGK</h3>
+                                                <h3>DPS</h3>
+                                            </div>
+                                        </div>
+                                        <div class="flight-detail-right">
+                                            <a href="/login.html" class="book-button"><button>Book Flight</button></a>
+                                            <h2 class="flight-price">IDR 1.180.000/pax</h2>
+                                        </div>
+                                            
+                                    </div>
+                                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer>
+            <div class="footer-wrapper">
+                <div class="about-wrapper">
+                    <div class="contacts">
+                        <h2>Contact Us:</h2>
+                        <a href="tel:0812-xxx-xxxx" class="telephone">0812xxxxxxx</a>
+                    </div>
+                    <div class="about-sites">
+                        <h2>About Trip Seek</h2>
+                        <a href="" class="abouts">About Us</a>
+                        <a href="" class="abouts">Help Center</a>
+                    </div>
+                </div>
+                <div class="newsletter">
+                    <h2>Subscribe to Our Newsletter</h2>
+                    <div class ="newsletter-input">
+                        <input type="email" placeholder="Your Email"><br>
+                        <input type="button" value="Subscribe" class="subscribe-button"> 
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <h1>&copy; Copyright 2019 by Trip Seek</h1>
+            </div>
+        </footer>
+    </body>
+</html>

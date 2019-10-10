@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hotel - Home | Trip Seek</title>
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+
+    <body>
+        <!-- HEADER -->
+        <div class="header">
+            <!-- LOGO WEBSITE -->
+            <a href="home.html"><img src="logotext.png" class="logo"></a>
+            <!-- LOGIN + REGISTER -->
+            <ul class="headerButtonGroup">
+                <li><a href="./register.html"><button class="headerButton" id="register">Register</button></a></li>
+                <li><a href="./login.html"><button class="headerButton" id="login">Login</button></a></li>
+            </ul>
+        </div>
+        <!-- NAVIGATION -->
+        <div>
+            <ul class="nav">
+                <li><a href="./index.html"><button class="navButtons">Home</button></a></li>
+                <!-- DROPDOWN BUTTON -->
+                <div class="dropdown">
+                    <li><a href="./product.html"><button class="navButtons" id="dropButton">Catalog</button></a></li>
+                    <div class="dropdown-content">
+                        <a href="./flight-catalog.html">Flight Booking</a><br>
+                        <a href="./hotel-catalog.html">Hotel Reservation</a>
+                    </div>
+                </div>
+                <li><a href="./contact.html"><button class="navButtons">Contact</button></a></li>
+                <li><a href="./testimony.html"><button class="navButtons">Testimonies</button></a></li>
+            </ul>
+        </div>
+
+        <!-- CONTENT -->
+        <div class="content-background">
+            <img src="./images/flight-bg.jpg" alt="Flight" class="content-bg">
+            <h1 class="list-title">Hotel Reservation</h1>
+            <div class="list-wrapper">
+                <!-- <div class="flights-header">
+                    <h1 class="head-content">Airline</h1>
+                    <h1 class="head-content">Departure</h1>
+                    <h1 class="head-content">Destination</h1>
+                    <h1 class="head-content">Price</h1>
+                </div> -->
+
+                <!-- Flight Detail Content -->
+                <div class="lists">
+                    <h2 class="hotel-name">The Alea Hotel Seminyak</h2>
+                    <hr>
+                    <div class="flight-detail">
+                        <div class="hotel-detail-left">
+                            <img src="images/hotels/hotel1.jpg" class="hotel-pic">
+                            <div class="hotel-detail-inside">
+                                <!-- maybe use grid, i don't think you need class-->
+                                <h2>Seminyak, Badung</h2>
+                                <h3>4.3/5</h3>
+                            </div>
+                        </div>
+                        <div class="hotel-detail-right">
+                            <a href="/login.html" class="book-button"><button>Rent Room</button></a>
+                            <h2 class="hotel-price">IDR 833.000/room/night</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lists">
+                    <h2 class="hotel-name">The Papandayan</h2>
+                    <hr>
+                    <div class="flight-detail">
+                        <div class="hotel-detail-left">
+                            <img src="images/hotels/hotel2.jpg" class="hotel-pic">
+                            <div class="hotel-detail-inside">
+                                <!-- maybe use grid, i don't think you need class-->
+                                <h2>Lengkong, Bandung</h2>
+                                <h3>5/5</h3>
+                            </div>
+                        </div>
+                        <div class="hotel-detail-right">
+                            <a href="/login.html" class="book-button"><button>Rent Room</button></a>
+                            <h2 class="hotel-price">IDR 4.166.000/room/night</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lists">
+                    <h2 class="hotel-name">Clove Garden Hotel and Residence</h2>
+                    <hr>
+                    <div class="flight-detail">
+                        <div class="hotel-detail-left">
+                            <img src="images/hotels/hotel3.jpg" class="hotel-pic">
+                            <div class="hotel-detail-inside">
+                                <!-- maybe use grid, i don't think you need class-->
+                                <h2>Cimenyan, Badung</h2>
+                                <h3>4.7/5</h3>
+                            </div>
+                        </div>
+                        <div class="hotel-detail-right">
+                            <a href="/login.html" class="book-button"><button>Rent Room</button></a>
+                            <h2 class="hotel-price">IDR 500.000/room/night</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lists">
+                    <h2 class="hotel-name">The Sensa Hotel</h2>
+                    <hr>
+                    <div class="flight-detail">
+                        <div class="hotel-detail-left">
+                            <img src="images/hotels/hotel4.jpg" class="hotel-pic">
+                            <div class="hotel-detail-inside">
+                                <!-- maybe use grid, i don't think you need class-->
+                                <h2>Ciampelas, Badung</h2>
+                                <h3>4.2/5</h3>
+                            </div>
+                        </div>
+                        <div class="hotel-detail-right">
+                            <a href="/login.html" class="book-button"><button>Rent Room</button></a>
+                            <h2 class="hotel-price">IDR 1.068.000/room/night</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lists">
+                    <h2 class="hotel-name">Max One Hotel</h2>
+                    <hr>
+                    <div class="flight-detail">
+                        <div class="hotel-detail-left">
+                            <img src="images/hotels/hotel5.png" class="hotel-pic">
+                            <div class="hotel-detail-inside">
+                                <!-- maybe use grid, i don't think you need class-->
+                                <h2>Jimbaran, Badung</h2>
+                                <h3>3.4/5</h3>
+                            </div>
+                        </div>
+                        <div class="hotel-detail-right">
+                            <a href="/login.html" class="book-button"><button>Rent Room</button></a>
+                            <h2 class="hotel-price">IDR 407.000/room/night</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lists">
+                    <h2 class="hotel-name">The ONE Legian</h2>
+                    <hr>
+                    <div class="flight-detail">
+                        <div class="hotel-detail-left">
+                            <img src="images/hotels/hotel6.png" class="hotel-pic">
+                            <div class="hotel-detail-inside">
+                                <!-- maybe use grid, i don't think you need class-->
+                                <h2>Legian, Badung</h2>
+                                <h3>4.0/5</h3>
+                            </div>
+                        </div>
+                        <div class="hotel-detail-right">
+                            <a href="/login.html" class="book-button"><button>Rent Room</button></a>
+                            <h2 class="hotel-price">IDR 426.000/room/night</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer>
+            <div class="footer-wrapper">
+                <div class="about-wrapper">
+                    <div class="contacts">
+                        <h2>Contact Us:</h2>
+                        <a href="tel:0812-xxx-xxxx" class="telephone">0812xxxxxxx</a>
+                    </div>
+                    <div class="about-sites">
+                        <h2>About Trip Seek</h2>
+                        <a href="" class="abouts">About Us</a>
+                        <a href="" class="abouts">Help Center</a>
+                    </div>
+                </div>
+                <div class="newsletter">
+                    <h2>Subscribe to Our Newsletter</h2>
+                    <div class ="newsletter-input">
+                        <input type="email" placeholder="Your Email"><br>
+                        <input type="button" value="Subscribe" class="subscribe-button"> 
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <h1>&copy; Copyright 2019 by Trip Seek</h1>
+            </div>
+        </footer>
+    </body>
+</html>
