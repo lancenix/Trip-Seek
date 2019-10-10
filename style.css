@@ -10,6 +10,10 @@
 
 body{
     box-sizing: border-box;
+    position: absolute;
+    height: 100%;
+    min-width: 100%;
+    max-width: 100%;
 }
 
 .clearfix::after
@@ -111,7 +115,7 @@ html {
 }
 
 #dropButton {
-    width: 125px;
+    width: 132px;
     margin: 0;
 }
 
@@ -160,7 +164,9 @@ html {
     position: relative;
     width: 100%;
     height: 100vh;
-    opacity: 0.5;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
 }
 
 .slide {
@@ -169,34 +175,31 @@ html {
     object-fit: cover;
     height: 100%;
     background-position: center center;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     min-width: 100%;
     max-width: 100%;
-    
+
     opacity: 0;
     transition: opacity 4s linear;
 }
 
 .slider-wrapper > .slide:first-child {
-	opacity: 1;
+	opacity: 0.5;
 }
 
 .welcome-content {
-    bottom: 20vh;
+    position: relative;;
     width: 100%;
-    position: absolute;
     text-align: center;
-    color: whitesmoke;
+    color: white;
     display: flex;
     flex-direction: column;
+    top: 15%;
+    opacity: 1;
 }
 
 .welcome {
     font-size: 35px;
-    padding-bottom: 120px;
+    padding-bottom: 90px;
     font-weight: bold;
 }
 
@@ -261,34 +264,37 @@ html {
     background-color: whitesmoke;
 }
 
-/*Testimony CONTENT*/
+
 .content-background {
     position: relative;
-    height: 100vh;
+    min-height: 100%;
     width: 100%;
     background-color: #2A2A2A;
 }
 
-.testimony-bg {
+.content-bg {
     position: absolute;
-    float: left;
     object-fit: cover;
     height: 100%;
     background-position: center center;
     min-width: 100%;
     max-width: 100%;
-    opacity: 0.5;
+    filter: brightness(50%);
 }
 
+/*Testimony CONTENT*/
 .testimonies-wrapper {
-    position: absolute;
-    bottom: 15%;
-    width: 62%;
-    left: 17%;
+    position: relative;
+    top: 10vh;
+    height: 100vh;
+    overflow-y: scroll;
 }
 .testimonies {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .testi-title {
@@ -299,8 +305,9 @@ html {
 .testi-group {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 8%;
+    margin-top: 5%;
     grid-row-gap: 8%;
+    grid-column-gap: 2%;
 }
 
 .testi {
@@ -308,14 +315,18 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 10px;
+    margin: 8px;
     background-color: #5e5e5ec4;
     text-align: center;
-    box-shadow:  0px 0px 84px 10px rgba(0, 0, 0, 0.603);
     color: white;
     padding: 15px;
     border-radius: 30px;
-    
+    transition: all .3s ease-in-out;
+    box-shadow:  0px 0px 84px 10px rgba(0, 0, 0, 0.603);
+}
+
+.testi:hover{
+    transform: scale(1.04);
 }
 .testi-profile {
     width: 100px;
@@ -332,12 +343,146 @@ html {
     border-radius: 10px;
 }
 
+
+/* FLight - Content*/
+.list-wrapper {
+    position: relative;
+    overflow-y: scroll;
+    height: 100vh;
+    color: white;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    max-height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.123);
+    border-radius: 10px;
+    box-shadow: 0px 0px 84px 10px rgba(0, 0, 0, 0.603);
+}
+.flight-company {
+    font-weight: bolder;
+}
+.flight-logo {
+    padding: 10px;
+    width: 90px;
+}
+.lists {
+    display: flex;
+    flex-direction: column; 
+    background-color: rgba(31, 31, 31, 0.685);
+    padding: 10px 32px;
+    border-radius: 10px;
+    margin: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list-title {
+    text-align: center;
+    color: white;
+    position: relative;
+    padding: 20px 0px;
+    font-size: 40px;
+}
+
+.flight-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.book-button {
+    border: none;
+    padding: 10px 32px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+    cursor: pointer;
+    margin-bottom: 8px;
+    transition: 0.5s;
+    margin-top: 10px;
+}
+
+.book-button a {
+    text-decoration: none;
+}
+
+.book-button button {
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+}
+
+.book-button:hover {
+    background-color: #ff8500;
+}
+
+
+.list-detail-left {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+}
+
+.flight-detail-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.flight-detail-inside {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 60%;
+    justify-items: center;
+    align-content: center;
+}
+
+.hotel-pic {
+    width: 120px;
+    height: 100%;
+    margin-top: 10px;
+}
+.hotel-detail-left {
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hotel-detail-right {
+    display: flex;
+    flex-direction: column;
+}
+.hotel-detail-inside {
+    display: flex;
+    flex-direction: column;
+}
+.hotel-detail-inside > h2{
+    font-size: 20px;
+}
+
+.hotel-name{
+    padding-top: 8px;
+    padding-bottom: 10px;
+}
+
+.hotel-price {
+    font-size: 18px;
+    text-align: center;
+}
 /*FOOTER*/
 footer{
     background-color: #2A2A2A;
     text-align: center;
     color: whitesmoke;
     position: relative;
+    width: 100%;
+    
 }
 /* .social-links {
     display: flex;
@@ -502,16 +647,76 @@ input[type=email] {
         font-size: 12px;
         padding: 15px;
     }
+
+    .list-wrapper{
+        width: 600px;
+    }
+
+    .flight-detail-inside {
+        font-size: 13px;
+    }
+
+    .list-detail-left {
+        width: 50%;
+    }
+
+    .hotel-detail-right {
+        width: 40%;
+    }
+    .hotel-price {
+        font-size: 15px;
+    }
+    .hotel-detail-inside > h2{
+        font-size: 12px;
+    }
+    .hotel-detail-inside > h3{
+        font-size: 12px;
+    }
+
+    .hotel-pic {
+        width: 100px;
+    }
+    
 }
 @media screen and (max-width: 750px) {
     .testimonies-wrapper {
-        bottom: 15%;
+        bottom: 12.5%;
         width: 90%;
         left: 5%;
     }
     .testi-content {
         padding: 10px;
     }
+    .list-wrapper{
+        width: 500px;
+    }
+    .flight-logo{
+        width: 50px;
+        height: 100%;
+        padding: 0px;
+    }
+    .flight-price {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .list-detail-left {
+        align-items: center;
+    }
+    .hotel-pic {
+        width: 80px;
+    }
+    .hotel-detail-inside > h2{
+        font-size: 15px;
+        text-align: center;
+    }
+    .hotel-detail-inside > h3{
+        text-align: center;
+    }
+    .book-button > button {
+        font-size: 12px;
+    }
+    
 }
 @media screen and (max-width: 500px) {
  
@@ -531,7 +736,7 @@ input[type=email] {
         padding: 10px 35px;
     }
     .testimonies-wrapper {
-        bottom: 20%;
+        bottom: 15%;
         width: 100%;
         left: 0%;
     }
@@ -548,6 +753,36 @@ input[type=email] {
 
     .newsletter {
         width: 80%;
+    }
+    .list-wrapper{
+        width: 400px;
+    }
+
+    .book-button {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    .flight-price {
+        font-size: 13px;
+    }
+
+    .list-detail-left {
+        width: 55%;
+    }
+    .flight-detail-inside {
+        font-size: 10px;
+    }
+
+    .flight-logo {
+        padding: 5px;
+    }
+    .hotel-detail-inside > h2{
+        font-size: 12px;
+        text-align: center;
+    }
+    .hotel-detail-inside > h3{
+        text-align: center;
     }
 
 }
