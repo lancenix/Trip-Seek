@@ -779,10 +779,10 @@ input[type=email] {
     }
     .hotel-detail-inside > h2{
         font-size: 12px;
-        text-align: center;
     }
-    .hotel-detail-inside > h3{
-        text-align: center;
+
+    .hotel-price {
+        font-size: 12px;
     }
 
 }
