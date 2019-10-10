@@ -237,17 +237,20 @@ html {
 
 .bookButton a {
     text-decoration: none;
-    color: whitesmoke;
+    
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-}
-.bookButton > button {
     padding:  10px 72px;
     border-radius: 40px;
     border: none;
-    font-size: 20px;
-    cursor: pointer;
     transition: 0.5s;
+}
+
+.bookButton > a > button {
+    background-color: transparent; 
+    border: none;
+    font-size: 20px;
+    color: whitesmoke;
 }
 .flightButton {
     background-color: #0072bb;
@@ -256,11 +259,11 @@ html {
     background-color: #ff8500;
 }
 
-.bookButton > button:hover > a {
+.bookButton > a:hover > button {
     color: black;
 }
 
-.bookButton > button:hover {
+.bookButton > a:hover {
     background-color: whitesmoke;
 }
 
@@ -292,7 +295,7 @@ html {
 .testimonies {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -588,9 +591,8 @@ input[type=email] {
 }
 
 @media screen and (max-width: 1435px){
-    .testimonies-wrapper {
+    .testimonies {
         bottom: 15%;
-        width: 70%;
         left: 14%;
     }
     .testi-title{
@@ -735,11 +737,13 @@ input[type=email] {
     .bookButton > button {
         padding: 10px 35px;
     }
-    .testimonies-wrapper {
+    .testimonies {
         bottom: 15%;
         width: 100%;
         left: 0%;
     }
+
+    
     .testi-profile {
         width: 80px;
     }
