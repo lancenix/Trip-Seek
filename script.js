@@ -1,12 +1,4 @@
-// function ShowMenu(){
-//     var menu = document.getElementsByClassName("container-mobile")[0];
-//     if(menu.style.display == "none"){
-//         menu.style.display = "block";
-//     } else{
-//         menu.style.display = "none";
-//     }
-// }
-
+//function for slideshow 
 (function() {
 	
 	function Slideshow( element ) {
@@ -73,3 +65,28 @@
 	
 	
 })();
+
+// window.onload = function(){
+// 	document.getElementById('reg-button').onclick = function(){
+// 		let nameInput = document.getElementById('name');
+// 		let emailInput = document.getElementById('email');
+// 		let passwordInput = document.getElementById('pass');
+// 		let confPassInput = document.getElementById('confpass');
+
+// 		//checks
+// 		if(nameInput.value.length == 0) {
+// 			alert('Please fill in your name');
+// 		}
+// 		else if (passwordInput.value.length == 0 || passwordInput.value.length < 8) {
+// 			alert('Please enter a password. Password must be at least 8 characters.');
+// 		}
+// 		//password confirmation
+// 		else if (passwordInput.value != confPassInput.value){
+// 			alert('Your password doesn\'t match');
+// 		}
+// 		else {
+// 			document.getElementById('reg-button').type="submit";
+// 		}
+		
+// 	}
+// }

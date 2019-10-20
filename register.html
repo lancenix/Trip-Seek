@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Testimony - Home | Trip Seek</title>
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="validation.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <!-- LOGO WEBSITE -->
+            <a href="home.html"><img src="logotext.png" class="logo"></a>
+            <!-- LOGIN + REGISTER -->
+            <ul class="headerButtonGroup">
+                <li><a href="./register.html"><button class="headerButton" id="register">Register</button></a></li>
+                <li><a href="./login.html"><button class="headerButton" id="login">Login</button></a></li>
+            </ul>
+        </div>
+        <!-- NAVIGATION -->
+        <div>
+            <ul class="nav">
+                <li><a href="./index.html"><button class="navButtons">Home</button></a></li>
+                <!-- DROPDOWN BUTTON -->
+                <div class="dropdown">
+                    <li><a href="./index.html"><button class="navButtons" id="dropButton">Catalog</button></a></li>
+                    <div class="dropdown-content">
+                        <a href="./flight-catalog.html">Flight Booking</a><br>
+                        <a href="./hotel-catalog.html">Hotel Reservation</a>
+                    </div>
+                </div>
+                <li><a href="./contact.html"><button class="navButtons">Contact</button></a></li>
+                <li><a href="./testimony.html"><button class="navButtons">Testimonies</button></a></li>
+            </ul>
+        </div>
+
+        <!-- content -->
+        <div class="content-background">
+            <img src="./images/travel.jpg" alt="Canal" class="content-bg">
+            <div class="reg-wrapper">
+                <div class="reg-content">
+                    <h1 class="reg-title">Join us as a member</h1>
+                    <form class="form-element" method="POST" onsubmit="return submitForm()" id="submit-form">
+                        <div class="form-content">
+                            <div class="labels">
+                                <label>Name</label>
+                                <label>Email</label>
+                                <label>Password</label>
+                                <label>Confirm Password</label>
+                                <label>Gender</label>
+                                <label>Date Of Birth</label>
+                            </div>
+                            <div class="inputs">
+                                <input type="text" name="name" id="name" class="input" placeholder="Enter your name">
+                                <input type="text" name="email" id="email" class="input" placeholder="Enter your email">
+                                <input type="password" name="password" id="pass" class="input" placeholder="Enter a password">
+                                <input type="password" name="confirmpassword" id="confpass" class="input" placeholder="Enter your password again">
+                                <select type="dropdown" name="gender" id="gender" placeholder="Select your gender" class="input" >
+                                    <option disabled selected value="0">Select your gender</option>
+                                    <option value = "Female">Female</option>
+                                    <option value = "Male">Male</option>
+                                    <option value = "Others">Others</option>
+                                </select>
+                                <input type="date" name="dob" id="dob" class="input" placeholder="Choose your birthdate">
+                            </div>
+                        </div>
+                        
+                        <div class="requirement">
+                            <span>
+                                <input type="checkbox" name="terms" class="termsOfCondition">
+                                <label>I agree with Terms & Conditions and Privacy Policy of Trip Seek</label>
+                            </span> <br>
+                            <button id="reg-button" type="submit" value="Add">
+                                Register
+                            </button>
+                            <span id="message">
+                            </span>
+
+                        </div>
+                    </form>
+                            
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer>
+                <div class="footer-wrapper">
+                    <div class="about-wrapper">
+                        <div class="contacts">
+                            <h2>Contact Us:</h2>
+                            <a href="tel:0812-xxx-xxxx" class="telephone">0812xxxxxxx</a>
+                        </div>
+                        <div class="about-sites">
+                            <h2>About Trip Seek</h2>
+                            <a href="" class="abouts">About Us</a>
+                            <a href="tel:0812-xxx-xxxx" class="abouts">Help Center</a>
+                        </div>
+                    </div>
+                    <div class="newsletter">
+                        <h2>Subscribe to Our Newsletter</h2>
+                        <div class ="newsletter-input">
+                            <input type="email" placeholder="Your Email" class="subscription-email"><br>
+                            <input type="submit" value="Subscribe" class="subscribe-button"> 
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <h1>&copy; Copyright 2019 by Trip Seek</h1>
+                </div>
+            </footer>
+
+
+            <!-- <script>
+                document.getElementById("reg-button").onclick = function() {
+                    if (document.getElementById("userName").value.length == 0) {
+                        alert("Name section must be filled");
+                    }
+                    
+                    else if (document.getElementById("email").value.length == 0){
+                        alert("Email must be filled");
+                    }
+                }
+            </script> -->
+    </body>
+</html>
